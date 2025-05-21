@@ -1,8 +1,18 @@
+import {useState} from 'react';
+import Header from './header.jsx';
+import ChatList from './chat-list.jsx';
+import MessagePart from './message-part.jsx';
 export default function ChatPage()
 {
+    const[currentChat, setCurrentChat]=useState(null);
+    const[conversations,setConversations]=useState([]);
     return(
-        <h1>
-            This is the chat page
-        </h1>
+       <div>
+<Header/>
+<div className='flex'>
+<ChatList setCurrentChat={setCurrentChat} setConversations={setConversations}/>
+<MessagePart currentChat={currentChat} conversations={conversations} setConversations={setConversations}/>
+</div>
+       </div>
     )
 }

@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 body{
+    transition:background-color 1s ease;
+}
+.light{
     background-color:rgb(255, 105, 180);
+}
+.dark{
+ background-color:rgb(255, 20, 147);
 }
 *{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -49,6 +55,21 @@ animation:slideIn3 1s both;
 animation-delay:0.8s;
 width:12rem;
 transition:background-color 0.8s ease;
+}
+.chat-list{
+    margin-top:5.8rem;
+}
+.girl{
+    width:100rem;
+}
+.convo{
+    margin-top:5rem;
+}
+.toggleSend{
+    border-radius:10px 0 0 10px;
+}
+.sender{
+    border-radius:0 10px 10px 0;
 }
 @keyframes slideIn{
     from{

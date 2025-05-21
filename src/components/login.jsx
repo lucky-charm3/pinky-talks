@@ -34,7 +34,7 @@ export default function Login()
    }
     return(
         <div>
-            <h2 className='pinky-talks text-7xl text-center font-bebas tracking-wide mt-24'>Pinky Talks</h2>
+            {/* <h2 className='pinky-talks text-7xl text-center font-bebas tracking-wide mt-24'>Pinky Talks</h2> */}
         <form onSubmit={validator} className='log-in-form'>
             <div className='flex flex-col space-y-2'>
             <label>UserName:</label>
@@ -71,7 +71,7 @@ export default function Login()
         </form>
         {showModal&&
         <div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center '>
-            <div className='pop-up flex flex-col space-y-6 bg-pink-300 items-center justify-center p-10 rounded-xl'>
+            <div className='modal flex flex-col space-y-6 bg-pink-300 items-center justify-center p-10 rounded-xl'>
                 <div className='text-lg'>{successMessage}</div>
                 <button onClick={ok} className='p-2 bg-pink-400 rounded-lg w-10'>
 Ok

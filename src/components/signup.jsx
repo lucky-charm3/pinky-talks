@@ -60,7 +60,7 @@ export default function SignUp()
     password:signedFormData.password,
     phoneNumber:signedFormData.phoneNumber,
     email:signedFormData.email,
-    profilePic:'',
+    profilePic:'./profile-picha.webp',
     status:Math.random()>0.5?"online":"offline"
 }
    setLoggedUsers(prev=>([...prev,newUser]));
@@ -76,7 +76,7 @@ navigate('/welcome');
     }
     return(
         <div>
-             <h2 className='pinky-talks text-7xl text-center font-bebas tracking-wide mt-24'>Pinky Talks</h2>
+             {/* <h2 className='pinky-talks text-7xl text-center font-bebas tracking-wide mt-24'>Pinky Talks</h2> */}
             <form className='sign-up-form' onSubmit={validator}>
             <div className='flex flex-col space-y-2'>
             <label>UserName:</label>
@@ -147,7 +147,7 @@ navigate('/welcome');
             </form>
             {openModal&&
             <div className='flex items-center justify-center inset-0 absolute bg-black bg-opacity-50'>
-                <div className='pop-up flex flex-col space-y-6 bg-pink-300 items-center justify-center rounded-xl'>
+                <div className='modal pop-up flex flex-col space-y-6 bg-pink-300 items-center justify-center rounded-xl'>
                     <p className='text-lg'>{successMessage}</p>
                     <button onClick={ok} className='p-2 bg-pink-400 rounded-lg w-10'>
                         Ok
