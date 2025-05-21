@@ -77,7 +77,7 @@ navigate('/welcome');
     return(
         <div>
              {/* <h2 className='pinky-talks text-7xl text-center font-bebas tracking-wide mt-24'>Pinky Talks</h2> */}
-            <form className='sign-up-form mx-w-sm mx-auto' onSubmit={validator}>
+            <form className='sign-up-form max-w-sm mx-auto' onSubmit={validator}>
             <div className='flex flex-col space-y-2'>
             <label>UserName:</label>
                 <input type='text'
