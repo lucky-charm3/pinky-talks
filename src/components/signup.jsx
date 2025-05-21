@@ -77,7 +77,7 @@ navigate('/welcome');
     return(
         <div>
              {/* <h2 className='pinky-talks text-7xl text-center font-bebas tracking-wide mt-24'>Pinky Talks</h2> */}
-            <form className='sign-up-form' onSubmit={validator}>
+            <form className='sign-up-form mx-w-sm mx-auto' onSubmit={validator}>
             <div className='flex flex-col space-y-2'>
             <label>UserName:</label>
                 <input type='text'
@@ -85,7 +85,7 @@ navigate('/welcome');
                 name='name'
                 value={signedFormData.name}
                 onChange={handleInput}
-                className='rounded-lg text-center h-9'
+                className='w-full rounded-lg text-center h-9'
                 required
                 />
                  <div className='text-red-500'>
@@ -99,7 +99,7 @@ navigate('/welcome');
                 name='password'
                 value={signedFormData.password}
                 onChange={handleInput}
-                className='rounded-lg text-center h-9'
+                className='w-full rounded-lg text-center h-9'
                 required
                 />
                 <div className='text-red-500'>
@@ -116,7 +116,7 @@ navigate('/welcome');
                 name='phoneNumber'
                 value={signedFormData.phoneNumber}
                 onChange={handleInput}
-                className='rounded-lg text-center h-9'
+                className='w-full rounded-lg text-center h-9'
                 required
                 />
                 <div className='text-red-500'>
@@ -131,7 +131,7 @@ navigate('/welcome');
                 name='email'
                 value={signedFormData.email}
                 onChange={handleInput}
-                className='rounded-lg text-center h-9'
+                className='w-full rounded-lg text-center h-9'
                 required
                 />
                <div className='text-red-500'>
